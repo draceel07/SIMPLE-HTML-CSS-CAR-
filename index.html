@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="./style.css">
     
 </head>
-<body>
+<body  >
+    <audio id="myAudio">
+        <source src="BMW+DRIVEBY.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+      
     <div class="container">
+            <!-- <button  type="button">Play Audio</button> -->
         <div class="sky">
             <div class="tree"></div>
             <div class="roads"></div>
-            <div class="car">
+            <div class="car" onclick="playAudio()">
                 <div class="wheel wheel1">
                     <img src="./car_wheel_left.png">
                 </div>
