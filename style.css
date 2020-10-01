@@ -1,0 +1,89 @@
+/* it will reset the html predefault extra_spaces */
+* {
+    margin: 0;
+    padding: 0;
+} 
+body{
+    overflow: hidden;
+    animation: shake linear 3s infinite;
+}
+.sky {
+    height: 100vh;
+    width: 100%;
+     background-image: url(background.jpg);
+     background-repeat: no-repeat;
+     position:absolute;
+}
+.tree{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./trees.png);
+    background-size: cover;
+    position: absolute;
+}
+.roads{
+    background-image: url(./track.png);
+    width: 800vw;
+    height: 60vh;
+    /* background-size: cover; */
+    background-repeat: repeat-x;
+    position: absolute;   
+    top:90vh; 
+    animation: road linear 11s infinite;
+}
+.car{
+    background-image: url(./car_body.png);
+    height: 100px;
+    width: 335px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* top:85vh;  */ 
+    position:absolute; 
+    left: 46vh; 
+    bottom: 21px;
+    animation: Car_Shake linear .3s infinite;
+    
+}
+
+.wheel1 img{
+    width: 77px;
+    position: relative;
+    top: 35px;
+    left: 35px;
+    animation: wheel_rotations linear .5s infinite;
+}
+.wheel2 img{
+    width: 77px;
+    position: relative;
+    top: -45px;
+    left: 215px;
+    animation: wheel_rotations linear .5s infinite;
+}   
+@keyframes wheel_rotations
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ @keyframes road
+{
+    100%
+    {
+        transform: translateX(-500vw);
+    }
+}
+@keyframes Car_Shake
+{
+    0%
+    {
+        transform: translateY(-5px);
+    }
+    50%
+    {
+        transform: translateY(-5px);
+    }
+    100%
+    {
+        transform: translateY(5px);
+    }
+}
