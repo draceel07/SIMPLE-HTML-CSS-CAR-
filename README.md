@@ -1,3 +1,6 @@
 # SIMPLE-HTML-CSS-CAR-
 A SIMPLE BUT FUN MOVING CAR IN HTML CSS
 [CLICK HERE](https://draceel07.github.io/SIMPLE-HTML-CSS-CAR-/)
+
+####SCREENSHOT
+<img src="Capture.JPG">
